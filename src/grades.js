@@ -1,26 +1,22 @@
 import React from 'react'
+import {
+  Grid,
+  Menu,
+  Segment
+} from 'semantic-ui-react'
 
 const Grades = () => {
   return(
-
-    <div className = "Grades">
-    <a>Kindergarten </a>
-    <a>First Grade </a>
-    <a>Second Grade </a>
-    <a>Third Grade </a>
-    <a>Fourth Grade </a>
-    <a>Fifth Grade </a>
-    </div>
-
-
-
-
-
-
-
-
-    // Write HtML here
-
+    <Segment vertical secondary>
+      <Menu text fluid widths={6}>
+        <Menu.Item name='Kindergarten'  />
+        <Menu.Item name='1st Grade' />
+        <Menu.Item name='2nd Grade' />
+        <Menu.Item name='3rd Grade' />
+        <Menu.Item name='4th Grade' />
+        <Menu.Item name='5th Grade' />
+      </Menu>
+    </Segment>
   )
 }
 

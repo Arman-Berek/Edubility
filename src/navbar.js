@@ -10,13 +10,13 @@ const NavBar = () => {
 
         <Menu.Menu position='right'>
           <Menu.Item name='about' >
-            <b>About Us</b>
+            About Us
           </Menu.Item>
           <Menu.Item name='login' >
-            <Button style={{ background: '#0066FF' }}primary>Log In</Button>
+            Log In
           </Menu.Item>
           <Menu.Item name='signup'>
-            <Button style={{ color: 'black'}}>Sign Up</Button>
+            Sign Up
           </Menu.Item>
         </Menu.Menu>
       </Menu>

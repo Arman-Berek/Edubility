@@ -1,4 +1,5 @@
 import React from 'react'
+import header_background from './header_background.jpg';
 import {
   Button,
   Grid,
@@ -8,7 +9,7 @@ import {
 
 const HeaderContainer = () => {
   return(
-    <Segment vertical padded>
+    <Segment style={{ backgroundImage: `url(${header_background})`  }} vertical padded>
       <Grid centered padded>
         <Grid.Row>
           <Header as='h1'>
@@ -19,7 +20,7 @@ const HeaderContainer = () => {
 
         <Grid.Row>
           <Grid.Column width={4}>
-            <Button content='Leaners start here' primary fluid/>
+            <Button style={{ background: '#0066FF', color: 'white' }} content='Learners start here' fluid/>
             <Button content='Teachers, start here' fluid basic/>
             <Button content='Parents, start here' fluid basic/>
           </Grid.Column>
