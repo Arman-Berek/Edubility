@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 import NavBar from './navbar';
-import Grades from './grades';
 import Footer from './footer';
-import HeaderContainer from './Header';
-import Activities from './activities';
+import Home from './Home'
+import Activity from './Activity'
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <NavBar />
-        <HeaderContainer />
-        <Activities />
-        <Grades/>
-        <Footer/>
-      </div>
+      <Router>
+        <div className="App">
+          <NavBar />
+          <div>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/activity/writing-activity" component={Activity} />
+          </div>
+          <Footer/>
+        </div>
+        </Router>
     );
   }
 }
