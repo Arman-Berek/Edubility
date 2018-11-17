@@ -13,8 +13,8 @@ const HeaderContainer = () => {
       <Grid centered padded>
         <Grid.Row>
           <Header as='h1'>
-          You can learn anything
-          <Header.Subheader>For free. For everyone. Forever.</Header.Subheader>
+          You can learn anything!
+          <Header.Subheader>For Free. For Everyone. In the Classroom.</Header.Subheader>
           </Header>
         </Grid.Row>
 

@@ -5,7 +5,7 @@ const NavBar = () => {
     return(
       <Menu>
         <Menu.Item name='edubility' >
-          <b>Edubility</b>
+          <b>WizKid</b>
         </Menu.Item>
 
         <Menu.Menu position='right'>
