@@ -1,22 +1,22 @@
 import React from 'react';
-import { Menu } from 'semantic-ui-react'
+import { Menu, Button } from 'semantic-ui-react';
 
 const NavBar = () => {
     return(
       <Menu>
         <Menu.Item name='edubility' >
-          Edubility
+          <b>Edubility</b>
         </Menu.Item>
 
         <Menu.Menu position='right'>
           <Menu.Item name='about' >
-            About us
+            <b>About Us</b>
           </Menu.Item>
           <Menu.Item name='login' >
-            Log In
+            <Button style={{ background: '#0066FF' }}primary>Log In</Button>
           </Menu.Item>
           <Menu.Item name='signup'>
-            Sign Up
+            <Button style={{ color: 'black'}}>Sign Up</Button>
           </Menu.Item>
         </Menu.Menu>
       </Menu>
