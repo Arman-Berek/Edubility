@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from './navbar';
+import Grades from './grades';
+import Footer from './footer';
 import HeaderContainer from './Header';
 
 class App extends Component {
@@ -8,6 +10,8 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <HeaderContainer />
+        <Grades/>
+        <Footer/>
       </div>
     );
   }
