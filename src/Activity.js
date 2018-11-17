@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import {
+  Form,
+  Label,
   Input,
   Segment
 } from 'semantic-ui-react'
@@ -59,10 +61,20 @@ class Activity extends Component {
             }
           </div>
 
-          {!!error &&
-            <div>{error_message}</div>
+          {!!error ?
+            <>
+            <Form>
+              <Form.Field inline>
+                <Input error value={this.state.userInput} onChange={this.handleOnChange} placeholder='Search...' />
+                <Label basic color='red' pointing='left'>
+                  {error_message}
+                </Label>
+              </Form.Field>
+            </Form>
+            </>
+            :
+            <Input value={this.state.userInput} onChange={this.handleOnChange} placeholder='Search...' />
           }
-        <Input value={this.state.userInput}  onChange={this.handleOnChange} placeholder='Search...' />
         </>
         :
         <div>Congrats! You've completed your first activity!</div>
