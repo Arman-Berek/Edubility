@@ -1,3 +1,5 @@
+> This repository was submitted to [Lehman Hacks](https://lehman-hacks.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=portfolio_) on Devpost
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
